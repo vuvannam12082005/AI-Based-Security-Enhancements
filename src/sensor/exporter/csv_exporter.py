@@ -1,13 +1,13 @@
 import csv, os
-from datetime import datetime
-from typing import Dict, List, Any
+from datetime import datetime, timezone
+from typing import Dict, Any
 from shared.schemas.event_schema import EVENT_COLUMNS
 
 class CsvExporter:
     def __init__(self, out_dir: str = "data/raw"):
         self.out_dir = out_dir
         os.makedirs(out_dir, exist_ok=True)
-        ts = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+        ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
         self.file_path = os.path.join(out_dir, f"events_{ts}.csv")
         self._init_file()
 
