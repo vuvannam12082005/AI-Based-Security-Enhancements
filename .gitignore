@@ -6,3 +6,7 @@ data/
 *.pkl
 .vscode/
 .DS_Store
+
+# eBPF build artifacts
+src/sensor/ebpf/build/
+src/sensor/ebpf/include/vmlinux.h
