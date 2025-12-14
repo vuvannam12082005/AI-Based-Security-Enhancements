@@ -10,3 +10,6 @@ data/
 # eBPF build artifacts
 src/sensor/ebpf/build/
 src/sensor/ebpf/include/vmlinux.h
+
+# editor/backup files
+*.bak
