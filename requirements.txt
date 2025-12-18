@@ -3,3 +3,9 @@ uvicorn[standard]==0.32.1
 pydantic==2.10.3
 pytest==8.3.4
 httpx==0.28.1
+
+# Streamlit UI dependencies
+streamlit==1.29.0
+plotly==5.17.0
+pandas==2.1.4
+requests==2.31.0
