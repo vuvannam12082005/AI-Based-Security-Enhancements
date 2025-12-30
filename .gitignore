@@ -13,3 +13,9 @@ src/sensor/ebpf/include/vmlinux.h
 
 # editor/backup files
 *.bak
+# python
+.venv/
+__pycache__/
+*.pyc
+
+
