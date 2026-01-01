@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Data và models (không commit lên git)
+data/
+*.pkl
+*.joblib
+
+# IDE/Editor
+.vscode/
+.idea/
+*.bak
+.DS_Store
+
+# Logs
+*.log
