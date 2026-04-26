@@ -85,16 +85,6 @@ curl -s "http://localhost:8001/sensor/enforcement_history?limit=10" | python3 -m
 | Reverse Shell | Kết nối đến port nghi ngờ (4444, 5555...) | Rule |
 | Data Exfiltration | Gửi lượng lớn dữ liệu ra ngoài | Future (eBPF) |
 
-## Kiến trúc hệ thống
-
-Sensor (8001) --> ML Service (8003) --> Enforcer (8002)
-      |                |                    |
-      +----------------+--------------------+
-                       |
-               Orchestrator (8000)
-                       |
-               Streamlit UI (8501)
-
 ## Lưu ý kỹ thuật
 
 - Enforcer cần sudo vì ghi vào /sys/fs/cgroup/
