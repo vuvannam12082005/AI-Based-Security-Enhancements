@@ -85,19 +85,6 @@ curl -s "http://localhost:8001/sensor/enforcement_history?limit=10" | python3 -m
 | Reverse Shell | Kết nối đến port nghi ngờ (4444, 5555...) | Rule |
 | Data Exfiltration | Gửi lượng lớn dữ liệu ra ngoài | Future (eBPF) |
 
-## Cấu trúc thư mục
-
-AI-Based-Security-Enhancements/
-├── src/
-│   ├── sensor/           # Thu thập events từ /proc
-│   ├── ml/               # ML service: train, predict
-│   ├── enforcer/         # Cgroup v2 throttle/kill
-│   └── integration/      # Orchestrator + UI
-├── shared/               # Schema dùng chung
-├── scripts/              # run_all.sh, setup_and_train.sh
-├── tests/                # Test scripts
-└── data/                 # Data và models
-
 ## Kiến trúc hệ thống
 
 Sensor (8001) --> ML Service (8003) --> Enforcer (8002)
